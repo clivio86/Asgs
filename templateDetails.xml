@@ -27,8 +27,10 @@
   <positions>
     <position>debug</position>
     <position>header</position>
+    <position>menu-top</position>   
     <position>footer</position>
     <position>left1</position>
     <position>left2</position>
+    <position>left3</position>
   </positions>
 </extension>

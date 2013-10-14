@@ -12,24 +12,46 @@ $app = JFactory::getApplication();
     <jdoc:include type="head" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
   </head>
-  <body>
+  <body class="principale">
+    
     <div class="container">
+      
       <div class="header">
-        <h1>ASGS</h1>
+        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top1.png" class="top1">
+        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top2.png">
+        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top3.png" class="top3">
+        
         <jdoc:include type="modules" name="header" style="none" />
       </div>
-      <div class="left">
-        <jdoc:include type="modules" name="left1" style="none" />
-        <jdoc:include type="modules" name="left2" style="none" />
+      
+      <div class="corpo">
+      	<jdoc:include type="modules" name="menu-top" style="none" />
+      	
+      	<div class="left">
+	        <jdoc:include type="modules" name="left1" style="none" />
+    	    <jdoc:include type="modules" name="left2" style="none" />
+    	    <jdoc:include type="modules" name="left3" style="none" />
+      	</div>
+    
+      	<div class="content">
+        	<jdoc:include type="message" />
+        	<jdoc:include type="component" />
+      	</div>
       </div>
-      <div class="content">
-        <jdoc:include type="message" />
-        <jdoc:include type="component" />
-      </div>
+    
       <div class="footer">
-        Template Realizzato da Clivio Fenili
+
         <jdoc:include type="modules" name="footer" style="none" />
       </div>
+
+	  <div class="coda">
+	  	ASGS - Associazione Sammarinese Giochi Storici
+	  		<div class="credits">
+        	Template Realizzato da Clivio Fenili
+        	</div>
+	  	
+	  </div>
+  
     </div>
   </body> 
 </html>

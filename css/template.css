@@ -1,0 +1,118 @@
+/* 
+ *Foglio di Stile
+ * Author: Clivio Fenili
+ * Version: 1.0
+ * Date: 14/10/2013
+ * 
+ */
+
+body {
+	background-image: url("../images/sfondi/sfondo.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: Gill Sans MT, Arial;
+	font-size: 15px;
+	line-height: 18px;
+	color: #043883;
+}
+
+/*
+ * 
+ *  IMPOSTAZIONI GENERICHE
+ * 
+ */
+
+div {
+	overflow: hidden;
+}
+
+ 
+img {
+	border: 0px;
+}
+
+a {
+	font-weight: normal;
+	text-decoration: none;	
+	color: #043883;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+
+/*
+ * 
+ * IMPOSTAZIONI PERSONALIZZATE
+ * 
+ */
+
+div.container{
+	min-width: 1080px;
+	width: 1080px;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*
+ * HEAD
+ */
+
+div.header{
+	width: 1080px;
+	min-height:210px;
+	height: 210px;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+}
+
+div.header img{
+	background: rpg(0,0,0,0);
+	float: left;
+	padding: 5px 5px 5px 5px;
+	width: auto;
+	height: 200px;
+}
+
+div.header img.top1{
+	float: left;
+}
+div.header img.top3{
+	float: inherit;
+}
+
+
+/*
+ * CORPO CENTRALE
+ */
+
+div.corpo{	
+	background: rgba(255,255,255,0.9);
+	padding: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+div.corpo div.left{
+	float: left;
+}
+
+div.corpo div.content{
+	float: left;	
+}
+
+
+/*
+ * FOOTER
+ */
+
+div.coda{
+	text-align: right;
+}
