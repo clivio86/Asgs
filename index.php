@@ -25,10 +25,14 @@ $app = JFactory::getApplication();
       </div>
       
       <div class="corpo">
-      	<jdoc:include type="modules" name="menu-top" style="none" />
+      	<div class="navigationTop">
+      		<jdoc:include type="modules" name="menu-top" style="none" />
+      	</div>
       	
       	<div class="left">
+      		<div class="navigation">
 	        <jdoc:include type="modules" name="left1" style="none" />
+	        </div>
     	    <jdoc:include type="modules" name="left2" style="none" />
     	    <jdoc:include type="modules" name="left3" style="none" />
       	</div>

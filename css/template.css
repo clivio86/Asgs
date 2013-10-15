@@ -73,8 +73,8 @@ div.header{
 }
 
 div.header img{
-	background: rpg(0,0,0,0);
-	float: left;
+	background: rgba(0,0,0,0);
+	float: inherit;
 	padding: 5px 5px 5px 5px;
 	width: auto;
 	height: 200px;
@@ -84,7 +84,7 @@ div.header img.top1{
 	float: left;
 }
 div.header img.top3{
-	float: inherit;
+	float: right;
 }
 
 
@@ -102,10 +102,14 @@ div.corpo{
 
 div.corpo div.left{
 	float: left;
+	width:200px;
+	height:auto;
 }
 
 div.corpo div.content{
-	float: left;	
+	float: inherit;	
+	padding: 0px 10px 10px 30px;
+	margin: 0px 0px 0px 0px;
 }
 
 
@@ -115,4 +119,80 @@ div.corpo div.content{
 
 div.coda{
 	text-align: right;
+}
+
+/*
+ * MENU TOP
+ */
+div.navigationTop{
+	text-align: center;
+}
+div.navigationTop ul{
+	  list-style-type: none;
+}
+
+div.navigationTop li {
+    text-align: center;
+    margin: 0px 30px 0px 0px;  
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    list-style: none;
+}
+div.navigationTop li a:link, div.navigationTop li a:visited{
+  	border:2px inset;
+  	border-color:#fff #666 #666 #fff;
+  	padding:5px 35px 5px 35px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #043883;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+div.navigationTop li a:hover{
+    background-color: #932224;
+}
+
+div.navigationTop li.active a{
+    background-color: #932224;
+}
+
+/*
+ * MENU PRINCIPALE 
+ */
+
+div.navigation {
+  width: 200px;
+  padding:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: auto;
+}
+
+div.navigation ul{
+  padding:0px 10px 0px 10px;
+  margin: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+
+div.navigation li {
+    margin: 0px 0px 0px 0px;  
+    padding: 10px 0px 0px 10px;
+    list-style: none;
+}
+div.navigation li a:link, div.navigation li a:visited{
+    display:block;
+    color: #033983 ;
+    border-bottom: 2px dotted;
+    border-color:#fff #fff #bbb #fff;
+    padding:10px 0px 3px 0px;
+    text-decoration: none;
+}
+
+div.navigation li a:hover{
+    color: #932224;
+}
+
+div.navigation li.active a{
+    color: #932224;
 }
