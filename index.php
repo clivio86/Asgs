@@ -18,7 +18,9 @@ $app = JFactory::getApplication();
       
       <div class="header">
         <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top1.png" class="top1">
-        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top2.png">
+        <div class=centrato>
+        	<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top2.png" class="top2">
+        </div>
         <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/top3.png" class="top3">
         
         <jdoc:include type="modules" name="header" style="none" />
@@ -51,7 +53,7 @@ $app = JFactory::getApplication();
 	  <div class="coda">
 	  	ASGS - Associazione Sammarinese Giochi Storici
 	  		<div class="credits">
-        	Template Realizzato da Clivio Fenili
+        	Created by <a href="http://www.contattoinformatico.com">Contatto Informatico</a>
         	</div>
 	  	
 	  </div>

@@ -9,15 +9,17 @@
 body {
 	background-image: url("../images/sfondi/sfondo.jpg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top center;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-family: Gill Sans MT, Arial;
+	font-family: Arial, Gill Sans MT;
 	font-size: 15px;
 	line-height: 18px;
 	color: #043883;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 /*
@@ -40,7 +42,7 @@ a {
 	text-decoration: none;	
 	color: #043883;
 }
-a:hover {
+a:hover, a:focus {
 	text-decoration: none;
 	color: #999;
 }
@@ -65,26 +67,38 @@ div.container{
  */
 
 div.header{
-	width: 1080px;
-	min-height:210px;
-	height: 210px;
-	margin: 20px 0px 0px 0px;
-	text-align: center;
+	margin: 0px 0px 0px 0px;
+	position:absolute;
+	z-index:-1;
 }
 
-div.header img{
+div.header img {
 	background: rgba(0,0,0,0);
-	float: inherit;
-	padding: 5px 5px 5px 5px;
+	padding: 0px 0px 0px 0px;
 	width: auto;
-	height: 200px;
 }
 
 div.header img.top1{
 	float: left;
+	height: 175px;
+	margin: 25px 0px 0px 0px;
+	position: absolute;
+}
+div.header img.top2{
+	height: 200px;
+}
+div.header div.centrato{
+  position: relative
+  float=left;
+  text-align:center;
+  
 }
 div.header img.top3{
 	float: right;
+	height: auto;
+	margin: -290px 0px 0px 720px;
+	position:relative;
+	
 }
 
 
@@ -94,7 +108,8 @@ div.header img.top3{
 
 div.corpo{	
 	background: rgba(255,255,255,0.9);
-	padding: 20px 20px 20px 20px;
+	margin: 220px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -148,14 +163,19 @@ div.navigationTop li a:link, div.navigationTop li a:visited{
     border-radius: 10px 10px 10px 10px;
     text-decoration: none;
     text-transform:uppercase;
+    transition-property: background-color, border-color;
+    transition-duration: 0.7s;
+  	transition-delay: .1s;
 }
 
-div.navigationTop li a:hover{
+div.navigationTop li a:hover, div.navigationTop li a:focus {
     background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
 }
 
 div.navigationTop li.active a{
     background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
 }
 
 /*
@@ -181,18 +201,84 @@ div.navigation li {
     list-style: none;
 }
 div.navigation li a:link, div.navigation li a:visited{
+	background: url("../images/dadi.png") no-repeat 122px 35px;
     display:block;
     color: #033983 ;
     border-bottom: 2px dotted;
     border-color:#fff #fff #bbb #fff;
-    padding:10px 0px 3px 0px;
+    padding:12px 0px 4px 0px;
     text-decoration: none;
+    transition-duration: 1s;
 }
 
-div.navigation li a:hover{
+div.navigation li a:hover, div.navigation li a:focus{
     color: #932224;
+    background: url("http://www.clivio.me/dadi.png") no-repeat 122px -1px;
 }
 
 div.navigation li.active a{
     color: #932224;
+    background: url("http://www.clivio.me/dadi.png") no-repeat 122px -1px;    
+}
+
+/*
+ * SPAZIO LOGIN
+ */
+form#login-form{
+  margin: 50px 0px 0px 0px;
+  padding: 0px 0px 10px 0px;
+  background-color: #043883;
+  border-radius: 20px 20px 20px 20px;
+  border: 0px;
+  background-color: #932224;
+	color: #ffffff;
+  list-style-type: none;
+  text-align:left;
+}
+div.left fieldset {
+  border: 0px;
+  text-align: center;
+  
+}
+form#login-form ul{
+	  padding: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 35px;
+    font-size: 80%;
+}
+
+form#login-form li a:link, form#login-form li a:visited{
+  	color: #ffffff;
+    text-decoration: none;
+}
+
+form#login-form li a:hover, form#login-form li a:focus {
+  color: #ccc;
+}
+
+/*
+ * RIQUADRO HOME PAGE
+ */
+
+div.riquadro {
+    box-shadow: 5px 5px 25px #888;
+    height: 400px;
+    width: 370px;
+    border:2px double #932224;
+    border-radius: 20px;    
+    margin: 0px 0px 30px 20px;
+    position: relative;
+    float: left;
+}
+
+div.riquadro h3 {
+  background-color: #932224;
+  color: #fff;
+  text-transform:uppercase;
+  border-radius: 18px 18px 0px 0px;
+  font-weight: bold;
+  padding: 7px 0px 3px 10px;
+  margin: 0px 0px 0px 0px;
+}
+div.riquadro div.newsflash {
+	margin: 5px 5px 5px 5px;
 }
