@@ -32,5 +32,11 @@
     <position>left1</position>
     <position>left2</position>
     <position>left3</position>
+    <position>footer-left</position>
+    <position>footer-centrale</position>
+    <position>footer1</position>
+    <position>footer2</position>
+    <position>footer3</position>
+    <position>footer4</position>
   </positions>
 </extension>

@@ -106,33 +106,67 @@ div.header img.top3{
  * CORPO CENTRALE
  */
 
-div.corpo{	
+div.corpo {	
 	background: rgba(255,255,255,0.9);
 	margin: 220px 0px 0px 0px;
 	padding: 10px 10px 10px 10px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
 	border-radius: 20px;
 }
 
-div.corpo div.left{
+div.corpo div.left {
 	float: left;
 	width:200px;
 	height:auto;
 }
 
-div.corpo div.content{
+div.corpo div.content {
 	float: inherit;	
 	padding: 0px 10px 10px 30px;
 	margin: 0px 0px 0px 0px;
+	min-height: 500px;
 }
 
-
 /*
- * FOOTER
+ * SPAZIO BANNER IN FOOTER ARTICOLO
  */
 
-div.coda{
+div.footer{
+	  margin: 5px 0px 0px 0px;
+}
+
+div.footer div.fcenter {
+  margin: 0px 10px 10px 10px;
+  width: 826px;
+  height: 150px;
+  border-radius: 20px;
+  border:2px double #932224;
+  float: left;
+  }
+
+div.footer div.fB {
+  margin: 0px 10px 10px 10px;
+  width: 189px;
+  height: 100px;
+  border-radius: 20px;
+  border:2px double #999;
+  float: left;
+
+}
+
+div.footer div.fleft {
+  margin: 0px 10px 10px 10px;
+  width: 176px;
+  height: 265px;
+  border-radius: 20px;
+  border:2px double #000;
+  float: left;
+  }
+
+/*
+ * BOTTOM
+ */
+
+div.bottom{
 	text-align: right;
 }
 
@@ -221,6 +255,7 @@ div.navigation li.active a{
     background: url("http://www.clivio.me/dadi.png") no-repeat 122px -1px;    
 }
 
+
 /*
  * SPAZIO LOGIN
  */
@@ -259,7 +294,7 @@ form#login-form li a:hover, form#login-form li a:focus {
  * RIQUADRO HOME PAGE
  */
 
-div.riquadro {
+div.moduletableriquadro {
     box-shadow: 5px 5px 25px #888;
     height: 400px;
     width: 370px;
@@ -270,7 +305,7 @@ div.riquadro {
     float: left;
 }
 
-div.riquadro h3 {
+div.moduletableriquadro h3 {
   background-color: #932224;
   color: #fff;
   text-transform:uppercase;
@@ -279,6 +314,17 @@ div.riquadro h3 {
   padding: 7px 0px 3px 10px;
   margin: 0px 0px 0px 0px;
 }
-div.riquadro div.newsflash {
+div.moduletableriquadro div.newsflashriquadro {
 	margin: 5px 5px 5px 5px;
+}
+
+/*
+ * IMMAGINE TOP HOME PAGE
+ */
+div.moduletableimage-top {
+    height: 200px;
+    width: 820px;
+    border: 0px double #932224;
+    border-radius: 20px;    
+    margin: 0px 0px 30px 0px;
 }
