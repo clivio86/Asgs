@@ -46,32 +46,20 @@ $app = JFactory::getApplication();
         
         <!-- FOOTER ALL'INTERNO DEL CONTENUTO -->
         <div class="footer">
-    		<div class=fleft>
     		    <jdoc:include type="modules" name="footer-left" style="none" />
-    		</div>
-		    <div class=fcenter>
 		    	<jdoc:include type="modules" name="footer-centrale" style="none" />
-		    </div>
-    		<div class="fB">
     			<jdoc:include type="modules" name="footer1" style="none" />
-    		</div>
-    		<div class="fB">
     			<jdoc:include type="modules" name="footer2" style="none" />
-    		</div>
-    		<div class="fB">
     			<jdoc:include type="modules" name="footer3" style="none" />
-    		</div>
-    		<div class="fB">
     			<jdoc:include type="modules" name="footer4" style="none" />
-    		</div>
-      </div>
+      	</div>
       </div>
 
 	
 	  <div class="bottom">
 	  	ASGS - Associazione Sammarinese Giochi Storici
 	  		<div class="credits">
-        	Created by <a href="http://www.contattoinformatico.com">Contatto Informatico</a>
+        	Created by <a href="http://www.contattoinformatico.com">Contatto Informatico</a> &amp; <a href="http://www.3studio.sm/">Graphic Design 3STUDIO</a> 
         	</div>
 	  	
 	  </div>

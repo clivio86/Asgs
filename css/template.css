@@ -32,6 +32,9 @@ div {
 	overflow: hidden;
 }
 
+p {
+	margin: 5px 0px 5px 0px;
+}
  
 img {
 	border: 0px;
@@ -121,9 +124,12 @@ div.corpo div.left {
 
 div.corpo div.content {
 	float: inherit;	
-	padding: 0px 10px 10px 30px;
+	padding: 0px 10px 10px 20px;
 	margin: 0px 0px 0px 0px;
 	min-height: 500px;
+}
+div.corpo div.content img {
+	max-width: 820px;
 }
 
 /*
@@ -132,35 +138,49 @@ div.corpo div.content {
 
 div.footer{
 	  margin: 5px 0px 0px 0px;
+	  text-align: center;
 }
 
-div.footer div.fcenter {
+div.footer div.bannergroupfcenter {
   margin: 0px 10px 10px 10px;
   width: 826px;
   height: 150px;
   border-radius: 20px;
   border:2px double #932224;
   float: left;
+  transition-duration: 0.7s;
   }
+div.footer div.bannergroupfcenter:hover {
+	border:2px double #eee;
+}
+  	
 
-div.footer div.fB {
+div.footer div.bannergroupfb {
   margin: 0px 10px 10px 10px;
   width: 189px;
   height: 100px;
   border-radius: 20px;
-  border:2px double #999;
+  border:2px double #932224;
   float: left;
-
+  transition-duration: 0.7s;
+}
+div.footer div.bannergroupfb:hover {
+	border:2px double #eee;
 }
 
-div.footer div.fleft {
+div.footer div.bannergroupfleft {
   margin: 0px 10px 10px 10px;
   width: 176px;
   height: 265px;
   border-radius: 20px;
   border:2px double #000;
   float: left;
+  transition-duration: 0.7s;
   }
+div.footer div.bannergroupfleft:hover {
+	border:2px double #eee;
+}
+
 
 /*
  * BOTTOM
@@ -295,12 +315,11 @@ form#login-form li a:hover, form#login-form li a:focus {
  */
 
 div.moduletableriquadro {
-    box-shadow: 5px 5px 25px #888;
+    box-shadow: 5px 5px 27px #777;
     height: 400px;
     width: 370px;
-    border:2px double #932224;
     border-radius: 20px;    
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0px 30px 25px;
     position: relative;
     float: left;
 }
@@ -311,11 +330,42 @@ div.moduletableriquadro h3 {
   text-transform:uppercase;
   border-radius: 18px 18px 0px 0px;
   font-weight: bold;
-  padding: 7px 0px 3px 10px;
+  padding: 7px 0px 3px 15px;
   margin: 0px 0px 0px 0px;
 }
+
 div.moduletableriquadro div.newsflashriquadro {
-	margin: 5px 5px 5px 5px;
+	margin: 5px 10px 10px 10px;
+}
+
+div.moduletableriquadro h4{
+margin: 10px 10px 10px 10px;
+}
+
+div.moduletableriquadro h4 a {
+	font-weight: normal;
+	text-decoration: none;	
+	color: #043883;
+	font-weight: bold;
+}
+
+div.moduletableriquadro h4 a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+
+div.moduletableriquadro a {
+	font-weight: inherit;
+	text-decoration: none;	
+	color: #043883;
+}
+div.moduletableriquadro a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+div.moduletableriquadro img {
+	max-width: 360px;
+	max-height: 350px;
 }
 
 /*
