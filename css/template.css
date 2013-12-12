@@ -524,7 +524,7 @@ div.moduletableriquadroNotizie {
     height: 450px;
     width: 380px;
     border-radius: 20px;    
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0px 30px 22px;
     position: relative;
     float: left;
 }
@@ -580,10 +580,11 @@ div.moduletableriquadroNotizie img {
  */
 
 div.testohome {
-	width: 410px;
+	width: 380px;
 	height: 300px;
 	position:relative;
 	float:left;
+	margin: 0px 0px 0px 20px;
 }
 
 /*
