@@ -33,37 +33,45 @@ $app = JFactory::getApplication();
       	
       	<div class="left">
       		<div class="navigation">
-	        <jdoc:include type="modules" name="left1" style="none" />
-	        </div>
+	        	<jdoc:include type="modules" name="left1" style="none" /></div>
+    	    <div class="subnavigation">
+    	    	<jdoc:include type="modules" name="left1bis" style="none" /></div>
     	    <jdoc:include type="modules" name="left2" style="none" />
-    		<jdoc:include type="modules" name="left3" style="none" />
+    	    <div class="navigation">
+    			<jdoc:include type="modules" name="left3" style="none" /></div>
+    		<div class="social">
+    			<a href="https://www.facebook.com/pages/Associazione-Sammarinese-Giochi-Storici/212891198742658" class="facebook" target=”_blank”>Facebook</a>
+    			<a href="" class="youtube" target=”_blank”>Youtube</a>
+    		</div>
+    		<div class="left4">
+    			<jdoc:include type="modules" name="left4" style="none" /></div>
       	</div>
+      	
     
       	<div class="content">
         	<jdoc:include type="message" />
         	<jdoc:include type="component" />
       	</div>
-        
-        <!-- FOOTER ALL'INTERNO DEL CONTENUTO -->
-        <div class="footer">
-    		    <jdoc:include type="modules" name="footer-left" style="none" />
-		    	<jdoc:include type="modules" name="footer-centrale" style="none" />
+
+      
+    	  <!-- FOOTER ALL'INTERNO DEL CONTENUTO -->
+	      <div class="footer">
+	      		<jdoc:include type="modules" name="footer-left" style="none" />
+		   		<jdoc:include type="modules" name="footer-centrale" style="none" />
     			<jdoc:include type="modules" name="footer1" style="none" />
     			<jdoc:include type="modules" name="footer2" style="none" />
     			<jdoc:include type="modules" name="footer3" style="none" />
     			<jdoc:include type="modules" name="footer4" style="none" />
-      	</div>
-      </div>
-
-	
-	  <div class="bottom">
+		  </div>
+     </div>
+    </div>
+    
+    <div class="bottom">
 	  	ASGS - Associazione Sammarinese Giochi Storici
 	  		<div class="credits">
         	Created by <a href="http://www.contattoinformatico.com">Contatto Informatico</a> &amp; <a href="http://www.3studio.sm/">Graphic Design 3STUDIO</a> 
         	</div>
 	  	
 	  </div>
-  
-    </div>
   </body> 
 </html>

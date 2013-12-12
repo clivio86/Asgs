@@ -12,20 +12,19 @@ body {
 	background-position: top center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height:100%;
 	text-align: center;
 	font-family: Arial, Gill Sans MT;
 	font-size: 15px;
 	line-height: 18px;
-	color: #043883;
+	color: #033981;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
 
 /*
- * 
  *  IMPOSTAZIONI GENERICHE
- * 
  */
 
 div {
@@ -50,6 +49,10 @@ a:hover, a:focus {
 	color: #999;
 }
 
+fieldset {
+	border: none;
+}
+
 
 /*
  * 
@@ -59,10 +62,11 @@ a:hover, a:focus {
 
 div.container{
 	min-width: 1080px;
+	max-width: 1080px;
 	width: 1080px;
+	height:100%;
 	text-align: left;
-	margin-left:auto;
-	margin-right:auto;
+	margin: 0px auto 0px auto;
 }
 
 /*
@@ -73,6 +77,8 @@ div.header{
 	margin: 0px 0px 0px 0px;
 	position:absolute;
 	z-index:-1;
+	width: 1120px;
+	
 }
 
 div.header img {
@@ -85,21 +91,23 @@ div.header img.top1{
 	float: left;
 	height: 175px;
 	margin: 25px 0px 0px 0px;
-	position: absolute;
+	position: relative;
 }
 div.header img.top2{
 	height: 200px;
 }
 div.header div.centrato{
-  position: relative
-  float=left;
+  position: absolute;
+  float: left;
   text-align:center;
+  width:100%;
+  z-index:-1;
   
 }
 div.header img.top3{
 	float: right;
-	height: auto;
-	margin: -290px 0px 0px 720px;
+	height: 409px;
+	margin: -80px 0px 0px 0px;
 	position:relative;
 	
 }
@@ -113,7 +121,7 @@ div.corpo {
 	background: rgba(255,255,255,0.9);
 	margin: 220px 0px 0px 0px;
 	padding: 10px 10px 10px 10px;
-	border-radius: 20px;
+	border-radius: 20px 20px 20px 20px;
 }
 
 div.corpo div.left {
@@ -137,8 +145,12 @@ div.corpo div.content img {
  */
 
 div.footer{
-	  margin: 5px 0px 0px 0px;
-	  text-align: center;
+	margin: 30px 0px 0px 0px;
+	text-align: center;
+	position: relative;
+	width: 1080px;
+	height: 270px;
+	clear:both;
 }
 
 div.footer div.bannergroupfcenter {
@@ -194,10 +206,11 @@ div.bottom{
  * MENU TOP
  */
 div.navigationTop{
-	text-align: center;
+	text-align: left;
 }
 div.navigationTop ul{
 	  list-style-type: none;
+	  padding: 0px 0px 0px 0px;
 }
 
 div.navigationTop li {
@@ -267,12 +280,85 @@ div.navigation li a:link, div.navigation li a:visited{
 
 div.navigation li a:hover, div.navigation li a:focus{
     color: #932224;
-    background: url("http://www.clivio.me/dadi.png") no-repeat 122px -1px;
+    background: url("../images/dadi.png") no-repeat 122px -1px;
 }
 
 div.navigation li.active a{
     color: #932224;
-    background: url("http://www.clivio.me/dadi.png") no-repeat 122px -1px;    
+    background: url("../images/dadi.png") no-repeat 122px -1px;    
+}
+
+
+div.navigation ul li ul{
+  padding:0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+
+div.navigation ul li ul li a:link, div.navigation ul li ul li a:visited{
+	background: url("../images/dadi2.png") no-repeat 103px 35px;
+    display:block;
+    color: #033983 ;
+    border-bottom: 2px dotted;
+    border-color:#fff #fff #bbb #fff;
+    padding:12px 0px 4px 0px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+div.navigation ul li ul li a:hover, div.navigation ul li ul li a:focus{
+    color: #932224;
+    background: url("../images/dadi2.png") no-repeat 103px -1px;
+}
+
+div.navigation ul li ul li.active a{
+    color: #932224;
+    background: url("../images/dadi2.png") no-repeat 103px -1px;    
+}
+
+/*
+ *  sottoMENU PRINCIPALE
+ */
+div.subnavigation{
+	text-align: left;
+}
+div.subnavigation ul{
+	  list-style-type: none;
+	  padding: 0px 0px 0px 0px;
+	  margin: 20px 0 20px 0;
+}
+
+div.subnavigation li {
+    text-align: center;
+    margin: 0px 0px 0px 0px;  
+    padding: 10px 10px 10px 10px;
+    list-style: none;
+    display: flex;
+}
+div.subnavigation li a:link, div.subnavigation li a:visited{
+  	border:2px inset;
+  	border-color:#fff #666 #666 #fff;
+  	padding:5px 35px 5px 35px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #043883;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition-property: background-color, border-color;
+    transition-duration: 0.7s;
+  	transition-delay: .1s;
+  	width:100%;
+}
+
+div.subnavigation li a:hover, div.subnavigation li a:focus {
+    background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
+}
+
+div.subnavigation li.active a{
+    background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
 }
 
 
@@ -280,7 +366,7 @@ div.navigation li.active a{
  * SPAZIO LOGIN
  */
 form#login-form{
-  margin: 50px 0px 0px 0px;
+  margin: 20px 0px 20px 0px;
   padding: 0px 0px 10px 0px;
   background-color: #043883;
   border-radius: 20px 20px 20px 20px;
@@ -311,20 +397,20 @@ form#login-form li a:hover, form#login-form li a:focus {
 }
 
 /*
- * RIQUADRO HOME PAGE
+ * RIQUADRO MENSILE HOME PAGE
  */
 
-div.moduletableriquadro {
+div.moduletableriquadroMensile {
     box-shadow: 5px 5px 27px #777;
-    height: 400px;
-    width: 370px;
+    height: 450px;
+    width: 380px;
     border-radius: 20px;    
-    margin: 0px 0px 30px 25px;
+    margin: -150px 0px 30px 21px;
     position: relative;
     float: left;
 }
 
-div.moduletableriquadro h3 {
+div.moduletableriquadroMensile h3 {
   background-color: #932224;
   color: #fff;
   text-transform:uppercase;
@@ -334,47 +420,479 @@ div.moduletableriquadro h3 {
   margin: 0px 0px 0px 0px;
 }
 
-div.moduletableriquadro div.newsflashriquadro {
+div.moduletableriquadroMensile div.newsflashriquadroMensile {
 	margin: 5px 10px 10px 10px;
 }
 
-div.moduletableriquadro h4{
+div.moduletableriquadroMensile h4{
 margin: 10px 10px 10px 10px;
 }
 
-div.moduletableriquadro h4 a {
+div.moduletableriquadroMensile h4 a {
 	font-weight: normal;
 	text-decoration: none;	
 	color: #043883;
 	font-weight: bold;
 }
 
-div.moduletableriquadro h4 a:hover, a:focus {
+div.moduletableriquadroMensile h4 a:hover, a:focus {
 	text-decoration: none;
 	color: #999;
 }
 
-div.moduletableriquadro a {
+div.moduletableriquadroMensile a {
 	font-weight: inherit;
 	text-decoration: none;	
 	color: #043883;
 }
-div.moduletableriquadro a:hover, a:focus {
+div.moduletableriquadroMensile a:hover, a:focus {
 	text-decoration: none;
 	color: #999;
 }
-div.moduletableriquadro img {
-	max-width: 360px;
+div.moduletableriquadroMensile img {
+	max-width: 360px !important;
 	max-height: 350px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/*
+ *  RIQUADRO EVENTI (più piccolo)
+ * moduletableriquadroEventi
+ */
+
+div.moduletableriquadroEventi {
+    box-shadow: 5px 5px 27px #777;
+    height: 275px;
+    width: 380px;
+    border-radius: 20px;    
+    margin: 25px 0px 30px 20px;
+    position: relative;
+    float: left;
+}
+
+div.moduletableriquadroEventi h3 {
+  background-color: #932224;
+  color: #fff;
+  text-transform:uppercase;
+  border-radius: 18px 18px 0px 0px;
+  font-weight: bold;
+  padding: 7px 0px 3px 15px;
+  margin: 0px 0px 0px 0px;
+}
+
+div.moduletableriquadroEventi div.newsflashriquadroEventi {
+	margin: 5px 10px 10px 10px;
+}
+
+div.moduletableriquadroEventi h4{
+margin: 10px 10px 10px 10px;
+}
+
+div.moduletableriquadroEventi h4 a {
+	font-weight: normal;
+	text-decoration: none;	
+	color: #043883;
+	font-weight: bold;
+}
+
+div.moduletableriquadroEventi h4 a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+
+div.moduletableriquadroEventi a {
+	font-weight: inherit;
+	text-decoration: none;	
+	color: #043883;
+}
+div.moduletableriquadroEventi a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+div.moduletableriquadroEventi img {
+	max-width: 360px !important;
+	max-height: 350px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/*
+ *  RIQUADRO NOTIZIE
+ */
+
+div.moduletableriquadroNotizie {
+    box-shadow: 5px 5px 27px #777;
+    height: 450px;
+    width: 380px;
+    border-radius: 20px;    
+    margin: 0px 0px 30px 20px;
+    position: relative;
+    float: left;
+}
+
+div.moduletableriquadroNotizie h3 {
+  background-color: #932224;
+  color: #fff;
+  text-transform:uppercase;
+  border-radius: 18px 18px 0px 0px;
+  font-weight: bold;
+  padding: 7px 0px 3px 15px;
+  margin: 0px 0px 0px 0px;
+}
+
+div.moduletableriquadroNotizie div.newsflashriquadroNotizie {
+	margin: 5px 10px 10px 10px;
+}
+
+div.moduletableriquadroNotizie h4{
+margin: 10px 10px 10px 10px;
+}
+
+div.moduletableriquadroNotizie h4 a {
+	font-weight: normal;
+	text-decoration: none;	
+	color: #043883;
+	font-weight: bold;
+}
+
+div.moduletableriquadroNotizie h4 a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+
+div.moduletableriquadroNotizie a {
+	font-weight: inherit;
+	text-decoration: none;	
+	color: #043883;
+}
+div.moduletableriquadroNotizie a:hover, a:focus {
+	text-decoration: none;
+	color: #999;
+}
+div.moduletableriquadroNotizie img {
+	max-width: 360px !important;
+	max-height: 350px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+/*
+ * DIV HOMEPAGE TESTO
+ */
+
+div.testohome {
+	width: 410px;
+	height: 300px;
+	position:relative;
+	float:left;
 }
 
 /*
  * IMMAGINE TOP HOME PAGE
  */
-div.moduletableimage-top {
-    height: 200px;
-    width: 820px;
-    border: 0px double #932224;
+div.moduletableimage-top img {
     border-radius: 20px;    
     margin: 0px 0px 30px 0px;
+}
+
+
+/*
+ * MENU LOGIN
+ */
+
+div.login-greeting {
+	padding: 15px 0px 15px 15px;
+}
+div.logout-button{
+	padding: 0px 0px 5px 15px;
+}
+
+/*
+ *  LEFT4
+ */
+div.left4{
+	margin: 20px 0px 0px 0px;
+	text-align:center;
+}
+
+/*
+ * CLEAR BOTH
+ */
+div.clear {
+	clear:both;
+}
+
+
+/*
+ * Numero di Pagina
+ */
+div.pagination {
+  	text-align: center;
+}
+div.pagination .counter{
+    padding:5px 10px 5px 10px;
+    margin: 0px auto 0px auto;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #999;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    text-transform:uppercase;
+    width: 200px;
+}
+div.pagination ul {
+	  list-style-type: none;
+	  padding: 0px 0px 0px 0px;
+  
+}
+div.pagination li {
+    text-align: center;
+    margin: 0px 5px 0px 0px;  
+    display: inline;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+  
+}
+
+div.pagination li :not(a){
+    padding:5px 10px 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #999;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+div.pagination li a:link, div.pagination li a:visited{
+  	border-color:#fff #666 #666 #fff;
+  	padding:5px 10px 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #043883;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+  	transition-delay: .1s;
+}
+
+div.pagination li a:hover, div.pagination li a:focus {
+    background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
+}
+
+div.pagination li.active a{
+    background-color: #932224;
+    border-color:#ccc #555 #555 #ccc;
+}
+
+/*
+ * Altri Articoli (Categoria Blog) 
+ */
+
+div.items-more{
+	text-align: left;
+    padding:5px 10px 5px 10px;
+    margin: 20px 0px 30px 0px;
+    border-radius: 20px 20px 20px 20px;
+    border-top:2px double #932224;
+    border-bottom:2px double #932224;
+}
+/*
+ * Separatore Articoli (Categoria Blog)
+ */
+div.blog div.item-separator {
+  	text-align: left;
+    height: 1px;
+    border-radius: 20px 20px 20px 20px;
+    border-top:2px double #932224;
+    border-bottom:1px double #043883;
+    margin: 40px 0px 40px 0px;
+}
+
+/*
+ * Grafica Categorie Link
+ */
+
+/*
+ * Grafica Errore Password, Recupero Nome Utente e Password e Registrazione
+ */
+
+div.weblink-category fieldset.filters{
+  text-align: right;
+}
+div.weblink-category legend {
+ padding: 0px 10px 0px 0px;  
+}
+
+div.weblink-category table.category{
+  width: 100%;
+}
+
+div.weblink-category table.category td {
+  padding: 20px;
+  border-bottom:2px double #932224;
+  border-top:2px double #043883;
+}
+
+	/*
+ 	 * Password Errata
+ 	 */
+	dd.error{
+  		color: #be1d1f;
+  		font-weight: bold;
+	}
+	dt.error{
+  		font-weight: bold;
+  		margint: 40px 0px 0px 0px;
+	}
+	div.login input, textarea, select {
+    	border: 1px solid #C6CFE2;
+    	background: #F7FBFE;
+    	padding: 2px;
+	}
+	div.login label {
+    	padding: 2px;
+    	width: 120px;
+    	float: left;
+    	font-weight: bold;
+	}
+	
+	/*
+	 *  Reste Password e Nome Utente
+	 */
+	 div.reset {
+  		margin: 40px 0px 0px 0px;
+	 }
+
+	 div.reset  input, div.reset textarea, div.reset select {
+    	border: 1px solid #C6CFE2;
+    	background: #F7FBFE;
+    	padding: 2px;
+	 }
+	 div.reset label {
+    	padding: 2px;
+    	width: 120px;
+    	font-weight: bold;
+	 }
+	 
+	 
+	/*
+	 * Registrazione
+	 */
+	
+	div.registration {
+  		margin: 40px 0px 0px 0px;
+	}
+
+	div.registration input, div.registration textarea, div.registration select {
+    	border: 1px solid #C6CFE2;
+    	background: #F7FBFE;
+    	padding: 2px;
+	}
+	
+	label {
+    	padding: 2px;
+    	width: 120px;
+    	font-weight: bold;
+	}
+
+/*
+ * Bottoni d'azione per gli autori dell'articolo
+ */
+
+ul.actions {
+	float:none;
+	list-style-type:none;
+	position:relative;
+	text-align:right;
+}
+
+/*
+ * Bottone YouTube
+ */
+
+.facebook{
+  background: url(../images/facebook2.png);
+  width:80px;
+  height:80px;
+  display:block;
+  text-indent: -9999px;
+  transform: rotate (25deg);
+  transition-property: background-;
+  transition-duration: 0.3s;
+  transition-delay: .1s;
+  float:left;
+  margin: 50px 10px 50px 10px;
+  positione: relative;
+}
+
+.facebook:hover{background: url(../images/facebook1.png);}
+
+/*
+ * Bottone Facebook
+ */
+
+.youtube{
+  background: url(../images/youtube2.png);
+  width:80px;
+  height:80px;
+  display:block;
+  text-indent: -9999px;
+  transform: rotate (25deg);
+  transition-property: background-;
+  transition-duration: 0.3s;
+  transition-delay: .1s;
+  float:left;
+  margin: 50px 10px 50px 10px;
+  position: relative;
+}
+
+.youtube:hover{
+	background: url(../images/youtube1.png);
+}
+
+/*
+ * Formattazione Categoria Lista
+ */
+
+div.category-list fieldset.filters{
+  text-align: right;
+}
+div.category-list table.category{
+  width: 100%;
+}
+
+div.category-list table.category td {
+  padding: 20px;
+  border-bottom:2px double #932224;
+  border-top:2px double #043883;
+}
+
+/*
+ * Formattazzione profilo (visualizzazione soltanto)
+ */
+
+div.profile{
+  margin: 20px 0 0 0;
+}
+
+div.profile legend {
+  font-weight: bold;
+  margin: 0 0 0px 0;
+  border-bottom:2px double #932224;
+  width: 100%;
+}
+div.profile dl {
+  padding: 0 0 30px 0;
+  width: 100%;
+}
+
+div.profile dt {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+div.profile dd {
+  margin: 0 0 20px 50px;
 }
