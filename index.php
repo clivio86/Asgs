@@ -40,8 +40,8 @@ $app = JFactory::getApplication();
     	    <div class="navigation">
     			<jdoc:include type="modules" name="left3" style="none" /></div>
     		<div class="social">
-    			<a href="https://www.facebook.com/pages/Associazione-Sammarinese-Giochi-Storici/212891198742658" class="facebook" target=”_blank”>Facebook</a>
-    			<a href="" class="youtube" target=”_blank”>Youtube</a>
+    			<a href="https://www.facebook.com/associazionesammarinesegiochistorici" class="facebook" target=”_blank”>Facebook</a>
+    			<a href="http://www.youtube.com/channel/UCILGPuL0X0eoYe3DsGSqU7g" class="youtube" target=”_blank”>Youtube</a>
     		</div>
     		<div class="left4">
     			<jdoc:include type="modules" name="left4" style="none" /></div>
@@ -73,5 +73,17 @@ $app = JFactory::getApplication();
         	</div>
 	  	
 	  </div>
+
+<!-- SCRIPT GOOGLE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36224513-5', 'asgs.sm');
+  ga('send', 'pageview');
+
+</script>
   </body> 
 </html>

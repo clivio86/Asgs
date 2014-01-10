@@ -158,12 +158,12 @@ div.footer div.bannergroupfcenter {
   width: 826px;
   height: 150px;
   border-radius: 20px;
-  border:2px double #932224;
   float: left;
-  transition-duration: 0.7s;
+  /* border:2px double #932224;
+     transition-duration: 0.7s;*/
   }
 div.footer div.bannergroupfcenter:hover {
-	border:2px double #eee;
+	/* border:2px double #eee;*/
 }
   	
 
@@ -172,12 +172,12 @@ div.footer div.bannergroupfb {
   width: 189px;
   height: 100px;
   border-radius: 20px;
-  border:2px double #932224;
   float: left;
-  transition-duration: 0.7s;
+  /* border:2px double #932224;
+     transition-duration: 0.7s;*/
 }
 div.footer div.bannergroupfb:hover {
-	border:2px double #eee;
+	/* border:2px double #eee;*/
 }
 
 div.footer div.bannergroupfleft {
@@ -185,12 +185,12 @@ div.footer div.bannergroupfleft {
   width: 176px;
   height: 265px;
   border-radius: 20px;
-  border:2px double #000;
   float: left;
-  transition-duration: 0.7s;
+  /* border:2px double #000;
+     transition-duration: 0.7s;*/
   }
 div.footer div.bannergroupfleft:hover {
-	border:2px double #eee;
+	/* border:2px double #eee;*/
 }
 
 
@@ -223,7 +223,7 @@ div.navigationTop li {
 div.navigationTop li a:link, div.navigationTop li a:visited{
   	border:2px inset;
   	border-color:#fff #666 #666 #fff;
-  	padding:5px 35px 5px 35px;
+  	padding:10px 0px 10px 0px;
     color: #ffffff;
     font-weight: bold;
     background-color: #043883;
@@ -331,14 +331,14 @@ div.subnavigation ul{
 div.subnavigation li {
     text-align: center;
     margin: 0px 0px 0px 0px;  
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 0px;
     list-style: none;
-    display: flex;
 }
+
 div.subnavigation li a:link, div.subnavigation li a:visited{
   	border:2px inset;
   	border-color:#fff #666 #666 #fff;
-  	padding:5px 35px 5px 35px;
+  	padding:10px 0px 10px 0px;
     color: #ffffff;
     font-weight: bold;
     background-color: #043883;
@@ -348,7 +348,8 @@ div.subnavigation li a:link, div.subnavigation li a:visited{
     transition-property: background-color, border-color;
     transition-duration: 0.7s;
   	transition-delay: .1s;
-  	width:100%;
+  	width:196px;
+  	display: block;
 }
 
 div.subnavigation li a:hover, div.subnavigation li a:focus {
@@ -712,6 +713,20 @@ div.blog div.item-separator {
     margin: 40px 0px 40px 0px;
 }
 
+
+/*
+ * Data Articoli
+ */
+
+dt.article-info-term {
+	display: none;
+}
+dd.published {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+
 /*
  * Grafica Categorie Link
  */
@@ -804,7 +819,7 @@ div.weblink-category table.category td {
  */
 
 ul.actions {
-	float:none;
+	float:right;
 	list-style-type:none;
 	position:relative;
 	text-align:right;
